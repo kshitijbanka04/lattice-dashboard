@@ -1,7 +1,7 @@
 # Lattice Dashboard
 
 Lives at: `kshitijbanka.com/projects/lattice` (static HTML on Hostinger)
-+ `lattice-dashboard.streamlit.app` (Streamlit Cloud, embedded via iframe).
++ `lattice-dashboard-n7mxynspqe9fd75e85cdsc.streamlit.app` (Streamlit Cloud, embedded via iframe).
 
 ## Layout
 
@@ -47,7 +47,7 @@ python3 -m streamlit run dashboard/streamlit_app.py
 ### Hostinger static page
 
 1. Edit `dashboard/index.html` and replace the iframe `src` with the live
-   Streamlit Cloud URL (e.g. `https://lattice-dashboard.streamlit.app/?embed=true`).
+   Streamlit Cloud URL (currently: `https://lattice-dashboard-n7mxynspqe9fd75e85cdsc.streamlit.app/?embed=true`).
 2. Upload `index.html` to Hostinger at `/projects/lattice/index.html`.
 3. (Optional) add a card linking to it on `kshitijbanka.com/projects`.
 
