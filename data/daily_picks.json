@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-05-24",
+  "vix_regime": "ELEVATED",
+  "size_mult": 0.5,
+  "picks": [
+    {
+      "rank": 1,
+      "ticker": "(placeholder)",
+      "score": 0,
+      "vol_mult": 0,
+      "entry": 0,
+      "target": 0,
+      "shares": 0,
+      "notional": 0
+    }
+  ],
+  "note": "Run scripts/breakout_live_quote_scan.py at 14:00 IST to populate."
+}

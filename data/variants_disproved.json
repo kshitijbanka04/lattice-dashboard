@@ -1,0 +1,106 @@
+[
+  {
+    "name": "V4 BASELINE (685 universe, pure)",
+    "annualized_pnl": 311144,
+    "win_rate": 71.2,
+    "max_dd": 10.7,
+    "verdict": "WINNER",
+    "delta_from_baseline": 0
+  },
+  {
+    "name": "Universe expansion to 1,672 stocks",
+    "annualized_pnl": 239300,
+    "win_rate": 58.9,
+    "max_dd": 24.4,
+    "verdict": "DILUTED ALPHA",
+    "delta_from_baseline": -71844
+  },
+  {
+    "name": "Universe filtered (719 intraday-eligible)",
+    "annualized_pnl": 248543,
+    "win_rate": 70.4,
+    "max_dd": 10.9,
+    "verdict": "FEWER NET SIGNALS",
+    "delta_from_baseline": -62601
+  },
+  {
+    "name": "Cup-and-Handle pattern bonus",
+    "annualized_pnl": 184424,
+    "win_rate": 68.3,
+    "max_dd": 12.9,
+    "verdict": "REORDERED PICKS WORSE",
+    "delta_from_baseline": -126720
+  },
+  {
+    "name": "Rectangle pattern alone",
+    "annualized_pnl": 33405,
+    "win_rate": 54.1,
+    "max_dd": "n/a",
+    "verdict": "MARGINAL \u2014 overlaps with V4",
+    "delta_from_baseline": -277739
+  },
+  {
+    "name": "Trendline breakout pattern alone",
+    "annualized_pnl": -508379,
+    "win_rate": 50.3,
+    "max_dd": "n/a",
+    "verdict": "DISASTER \u2014 too noisy",
+    "delta_from_baseline": -819523
+  },
+  {
+    "name": "4 concurrent slots \u00d7 25% allocation",
+    "annualized_pnl": 198048,
+    "win_rate": 69.6,
+    "max_dd": 15.1,
+    "verdict": "SMALLER POSITIONS LOSE",
+    "delta_from_baseline": -113096
+  },
+  {
+    "name": "Intraday -2% stop loss",
+    "annualized_pnl": 295136,
+    "win_rate": 64.7,
+    "max_dd": 7.9,
+    "verdict": "STOPS BACKFIRE ON NOISE",
+    "delta_from_baseline": -16008
+  },
+  {
+    "name": "MIS intraday-only (5\u00d7 leverage)",
+    "annualized_pnl": -219869,
+    "win_rate": 62.3,
+    "max_dd": "n/a",
+    "verdict": "NO OVERNIGHT GAP ALPHA",
+    "delta_from_baseline": -531013
+  },
+  {
+    "name": "MIS + BTST hybrid (50/50)",
+    "annualized_pnl": -391818,
+    "win_rate": 61.4,
+    "max_dd": "n/a",
+    "verdict": "MIS DRAGS HYBRID",
+    "delta_from_baseline": -702962
+  },
+  {
+    "name": "Sector momentum bonus (26 NSE indices)",
+    "annualized_pnl": "neutral",
+    "win_rate": 58.2,
+    "max_dd": "n/a",
+    "verdict": "NO INCREMENTAL ALPHA",
+    "delta_from_baseline": "\u22480"
+  },
+  {
+    "name": "Partial booking + trailing stop",
+    "annualized_pnl": "\u2248baseline",
+    "win_rate": 62.9,
+    "max_dd": "n/a",
+    "verdict": "OPERATIONALLY COMPLEX",
+    "delta_from_baseline": "\u2248+\u20b940k"
+  },
+  {
+    "name": "Gap-up filter (skip if open > +1.3%)",
+    "annualized_pnl": -58073,
+    "win_rate": 58.0,
+    "max_dd": 58.3,
+    "verdict": "KILLS MOONSHOTS",
+    "delta_from_baseline": -369217
+  }
+]

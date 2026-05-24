@@ -1,0 +1,57 @@
+{
+  "strategy": "V4 \u2014 Daily breakout BTST",
+  "universe_size": 685,
+  "universe_description": "F&O + curated mid-cap Indian equities (excludes 7 chronic losers)",
+  "account_size_inr": 200000,
+  "backtest_period": "1 year (2025-05-20 to 2026-05-19)",
+  "n_trades": 473,
+  "win_rate_pct": 71.2,
+  "avg_return_per_trade_pct": 0.514,
+  "avg_pnl_per_trade_inr": 637,
+  "annualized_pnl_inr": 311144,
+  "annualized_return_pct": 155.6,
+  "sharpe_annualized": 5.4,
+  "max_drawdown_pct": 10.7,
+  "exit_breakdown": {
+    "intraday_target_hit": {
+      "n": 274,
+      "win_pct": 100,
+      "avg_pct": 1.5,
+      "total_inr": 846638
+    },
+    "next_day_close": {
+      "n": 148,
+      "win_pct": 21.6,
+      "avg_pct": -1.63,
+      "total_inr": -595330
+    },
+    "no_intraday_data": {
+      "n": 51,
+      "win_pct": 60.8,
+      "avg_pct": 0.53,
+      "total_inr": 49879
+    }
+  },
+  "score_breakdown": {
+    "score_7": {
+      "n": 18,
+      "win_pct": 55.6,
+      "avg_inr": 254
+    },
+    "score_8": {
+      "n": 95,
+      "win_pct": 55.8,
+      "avg_inr": 346
+    },
+    "score_9": {
+      "n": 142,
+      "win_pct": 57.8,
+      "avg_inr": 215
+    },
+    "score_10": {
+      "n": 204,
+      "win_pct": 59.3,
+      "avg_inr": 458
+    }
+  }
+}
