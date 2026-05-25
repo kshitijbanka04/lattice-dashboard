@@ -126,9 +126,26 @@ def gen_variants_disproved():
 
 
 def gen_daily_picks_placeholder():
-    """Today's picks. Real one populated by daily cron; this is a placeholder."""
+    """Today's picks file — DON'T overwrite if breakout_live_quote_scan.py
+    has already written real picks for today. Only write placeholder if the
+    file is missing or stale (more than 1 day old)."""
     today = datetime.now().strftime("%Y-%m-%d")
-    picks = {
+    picks_path = DATA_DIR / "daily_picks.json"
+
+    # Skip if file already has today's real data
+    if picks_path.exists():
+        try:
+            existing = json.loads(picks_path.read_text())
+            if existing.get("as_of") == today:
+                # If it's real picks (not placeholder), preserve
+                top_ticker = (existing.get("picks") or [{}])[0].get("ticker", "")
+                if top_ticker and not top_ticker.startswith("("):
+                    print(f"  daily_picks.json — preserved (real picks for {today})")
+                    return
+        except Exception:
+            pass    # malformed, fall through and overwrite
+
+    placeholder = {
         "as_of": today,
         "vix_regime": "ELEVATED",
         "size_mult": 0.5,
@@ -138,7 +155,7 @@ def gen_daily_picks_placeholder():
         ],
         "note": "Run scripts/breakout_live_quote_scan.py at 14:00 IST to populate.",
     }
-    (DATA_DIR / "daily_picks.json").write_text(json.dumps(picks, indent=2))
+    picks_path.write_text(json.dumps(placeholder, indent=2))
     print(f"  daily_picks.json (placeholder)")
 
 
